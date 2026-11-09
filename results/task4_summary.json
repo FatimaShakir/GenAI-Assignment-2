@@ -1,0 +1,40 @@
+{
+    "task": "Reference vs Tiled Online-Softmax Attention",
+    "device": "Tesla T4",
+    "dtype": "float32",
+    "sequence_lengths": [
+        128,
+        256,
+        512
+    ],
+    "tile_sizes": [
+        32,
+        64
+    ],
+    "correctness": {
+        "tests": 18,
+        "all_passed": true,
+        "maximum_absolute_error": 9.5367431640625e-07
+    },
+    "complexity": {
+        "reference_time": "O(N^2 * d)",
+        "reference_attention_intermediate_memory": "O(N^2)",
+        "tiled_time": "O(N^2 * d)",
+        "tiled_attention_intermediate_memory": "O(Bq * Bk + Bq * d) per tile, excluding Q/K/V and output storage"
+    },
+    "observations": [
+        "Tiled attention matched reference attention numerically.",
+        "Tiled attention avoided allocating a full attention matrix.",
+        "Larger tiles reduced Python-loop and GPU-launch overhead.",
+        "The Python-loop tiled implementation was slower than reference attention.",
+        "PyTorch optimized SDPA achieved the lowest latency.",
+        "Reference latency measurements showed runtime variability."
+    ],
+    "limitations": [
+        "The implementation uses PyTorch operations rather than a fused CUDA kernel.",
+        "Python loops and many small GPU operations increase latency.",
+        "Peak allocated memory includes the resident language model.",
+        "The experiment measures inference only, not backward propagation.",
+        "The tested sequence lengths are relatively short."
+    ]
+}

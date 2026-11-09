@@ -1,0 +1,11 @@
+{
+  "description": "Observed local CPU example; not part of held-out test metrics",
+  "patient": ["0. Patient is 52 years old.", "1. Patient has type 2 diabetes.", "2. Patient currently takes metformin."],
+  "criterion_type": "exclusion",
+  "criterion": "Patients currently taking metformin are excluded.",
+  "expected_label": "excluded",
+  "expected_evidence_ids": [2],
+  "model_label": "not excluded",
+  "model_evidence_ids": [1],
+  "error": "Incorrect classification and unsupported cited evidence; preliminary overall outcome was misleading."
+}

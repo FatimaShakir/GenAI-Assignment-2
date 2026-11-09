@@ -1,0 +1,11 @@
+{
+    "training_samples": 100,
+    "epochs": 3,
+    "training_steps": 75,
+    "training_seconds": 61.2230372060003,
+    "training_loss": 1.9072520963350932,
+    "trainable_parameters": 4399104,
+    "distillation_type": "sequence_level",
+    "teacher_model": "Qwen2.5-0.5B-Instruct fine-tuned target",
+    "student_model": "12-layer Qwen2.5 draft"
+}

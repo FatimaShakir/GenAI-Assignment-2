@@ -1,0 +1,6 @@
+validation_prompt,prompt_tokens,tokens_identical,proposed_tokens,accepted_draft_tokens,acceptance_rate,target_forward_calls,draft_forward_calls,rejections
+0,270,True,43,21,0.4883720930232558,12,43,8
+1,249,True,74,12,0.16216216216216217,20,74,17
+2,255,True,74,12,0.16216216216216217,20,74,17
+3,270,True,74,12,0.16216216216216217,20,74,18
+4,256,True,74,12,0.16216216216216217,20,74,18

@@ -1,0 +1,8 @@
+{
+    "selected_model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "gpu": "Tesla T4",
+    "gpu_memory_gib": 14.56,
+    "planned_training_method": "LoRA",
+    "reason": "Small decoder-only Transformer suitable for resource-constrained fine-tuning and explicit autoregressive inference experiments.",
+    "limitations": "Limited parameter count may restrict clinical reasoning accuracy and evidence identification."
+}

@@ -1,0 +1,16 @@
+{
+  "test_records": 206,
+  "tp": 40,
+  "fp": 36,
+  "fn": 54,
+  "micro_precision": 0.5263157894736842,
+  "micro_recall": 0.425531914893617,
+  "micro_f1": 0.4705882352941176,
+  "macro_precision": 0.17071197411003236,
+  "macro_recall": 0.1575242718446602,
+  "macro_f1_strict": 0.16005547850208043,
+  "macro_f1_empty_empty_one": 0.7619972260748961,
+  "macro_f1_nonempty_union": 0.40209059233449473,
+  "exact_evidence_match": 0.7427184466019418,
+  "empty_empty_cases": 124
+}

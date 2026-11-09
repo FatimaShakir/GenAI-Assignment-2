@@ -1,0 +1,15 @@
+{
+  "test_records": 206,
+  "test_patients": 8,
+  "accuracy": 0.6747572815533981,
+  "macro_f1": 0.3341675008341675,
+  "invalid_outputs": 0,
+  "label_order": [
+    "included",
+    "not included",
+    "excluded",
+    "not excluded",
+    "not applicable",
+    "not enough information"
+  ]
+}

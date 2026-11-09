@@ -1,0 +1,3 @@
+model,parameters_billion,architecture,attention,context_tokens,license,fp16_weights_gib_approx
+Qwen2.5-0.5B-Instruct,0.49,Decoder-only Transformer,Grouped Query Attention,32768,Apache-2.0,0.92
+Qwen2.5-1.5B-Instruct,1.54,Decoder-only Transformer,Grouped Query Attention,32768,Apache-2.0,2.87

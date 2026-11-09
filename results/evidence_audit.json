@@ -1,0 +1,12 @@
+{
+    "total_examples": 206,
+    "both_empty": 102,
+    "gold_only_empty": 14,
+    "pred_only_empty": 35,
+    "both_nonempty": 55,
+    "macro_f1_empty_zero": 0.18721682847896437,
+    "macro_f1_empty_perfect": 0.6823624595469255,
+    "macro_f1_nonempty_union": 0.3708333333333333,
+    "micro_f1": 0.4565217391304348,
+    "exact_match_rate": 0.6601941747572816
+}

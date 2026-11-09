@@ -1,0 +1,3 @@
+Model,Accuracy,Macro-F1,Invalid outputs
+Base Qwen2.5-0.5B,0.0,0.0,206
+LoRA Fine-Tuned Qwen2.5-0.5B,0.7281553398058253,0.3845516281577663,0

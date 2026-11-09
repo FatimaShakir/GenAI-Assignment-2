@@ -1,0 +1,65 @@
+{
+    "evaluation_split": "validation",
+    "total_annotations": 206,
+    "classification": {
+        "accuracy": 0.728155,
+        "macro_f1": 0.384552,
+        "inclusion_accuracy": 0.7424,
+        "exclusion_accuracy": 0.7214,
+        "classification_errors": 56
+    },
+    "evidence_retrieval": {
+        "micro_precision": 0.6087,
+        "micro_recall": 0.3652,
+        "micro_f1": 0.4565,
+        "macro_f1_empty_zero": 0.187217,
+        "macro_f1_empty_perfect": 0.682362,
+        "macro_f1_nonempty_union": 0.370833,
+        "exact_match_rate": 0.6602,
+        "both_empty_count": 102,
+        "gold_only_empty_count": 14,
+        "prediction_only_empty_count": 35,
+        "both_nonempty_count": 55
+    },
+    "error_analysis": [
+        {
+            "annotation_id": 8,
+            "failure": "Missing clinical confirmation of unstable angina"
+        },
+        {
+            "annotation_id": 15,
+            "failure": "Missing pregnancy/nursing status"
+        },
+        {
+            "annotation_id": 18,
+            "failure": "Unsupported imaging eligibility decision"
+        },
+        {
+            "annotation_id": 19,
+            "failure": "Missing beta-blocker contraindication information"
+        },
+        {
+            "annotation_id": 22,
+            "failure": "Obesity risk factor overlooked"
+        },
+        {
+            "annotation_id": 24,
+            "failure": "Not applicable confused with not excluded"
+        },
+        {
+            "annotation_id": 26,
+            "failure": "Pregnancy-related uncertainty overlooked"
+        },
+        {
+            "annotation_id": 31,
+            "failure": "Fever duration requirement misinterpreted"
+        }
+    ],
+    "main_findings": [
+        "Fine-tuning improved structured eligibility classification.",
+        "Minority classes remain difficult to predict.",
+        "Missing information is frequently confused with negative evidence.",
+        "Evidence retrieval performance depends on empty-set conventions.",
+        "Correct evidence identification does not guarantee correct classification."
+    ]
+}

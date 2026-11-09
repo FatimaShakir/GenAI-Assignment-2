@@ -1,0 +1,20 @@
+{
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "gpu": "Tesla T4",
+    "decoding_strategy": "greedy",
+    "prompt_lengths": [
+        64,
+        128,
+        256
+    ],
+    "output_lengths": [
+        16,
+        32,
+        64
+    ],
+    "all_tokens_identical": true,
+    "mean_speedup": 0.9443991717760203,
+    "max_speedup": 1.368025786828787,
+    "min_speedup": 0.4453817389495465,
+    "benchmark_configurations": 9
+}

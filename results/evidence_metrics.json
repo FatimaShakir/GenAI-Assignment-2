@@ -1,0 +1,12 @@
+{
+    "micro_precision": 0.6086956521739131,
+    "micro_recall": 0.3652173913043478,
+    "micro_f1": 0.4565217391304348,
+    "macro_precision": 0.20388349514563106,
+    "macro_recall": 0.1808252427184466,
+    "macro_f1": 0.18721682847896437,
+    "exact_match_rate": 0.6601941747572816,
+    "true_positives": 42,
+    "false_positives": 27,
+    "false_negatives": 73
+}

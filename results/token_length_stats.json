@@ -1,0 +1,10 @@
+{
+    "train_min": 167,
+    "train_median": 230.0,
+    "train_p95": 420.0,
+    "train_max": 549,
+    "validation_min": 207,
+    "validation_median": 271.0,
+    "validation_p95": 316.0,
+    "validation_max": 383
+}

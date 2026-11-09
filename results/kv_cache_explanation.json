@@ -1,0 +1,14 @@
+{
+    "task": "Autoregressive decoding with and without KV cache",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "decoding": "Greedy argmax",
+    "uncached_method": "At each decoding step, the full prompt plus all previously generated tokens is forwarded through the transformer. Attention keys and values are recomputed for the entire growing sequence.",
+    "cached_method": "The prompt is processed once during prefill. The transformer returns past_key_values, which are passed into subsequent forward calls. Only the newest token is processed at each subsequent decoding step.",
+    "prefill": "Prefill computes representations for all prompt tokens and initializes the KV cache.",
+    "position_handling": "The model uses the cached sequence length to infer positions for subsequent tokens. Qwen2.5 uses rotary positional embeddings.",
+    "causal_masking": "Causal attention prevents tokens from attending to future positions. During single-token cached decoding, the new query attends to previously cached positions and its own position.",
+    "cache_growth": "The KV cache grows approximately linearly with sequence length. For each transformer layer, keys and values are stored for previous tokens.",
+    "correctness": "Cached and uncached decoding were compared using exact generated token IDs across three input/output length configurations, each repeated three times.",
+    "benchmark_method": "CUDA synchronization was performed before and after timing. Prefill and subsequent decoding were measured separately. Median values from three repetitions were reported.",
+    "limitations": "The benchmark uses batch size one, a Tesla T4 GPU, and short-to-moderate sequence lengths. Speedups depend on sequence length, GPU workload, kernel overhead, and memory behavior. Peak allocated GPU memory includes the resident model and temporary activations."
+}

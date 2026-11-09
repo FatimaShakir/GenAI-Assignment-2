@@ -1,0 +1,210 @@
+[
+  {
+    "case_number": 1,
+    "annotation_id": 185,
+    "patient_id": "sigir-201411",
+    "criterion_type": "inclusion",
+    "criterion": "Patients were included if they were diagnosed with Shock, Acute respiratory distress syndrome (ARDS), or both.",
+    "gold_label": "included",
+    "predicted_label": "not enough information",
+    "gold_evidence_ids": [
+      2,
+      3
+    ],
+    "predicted_evidence_ids": [
+      0
+    ],
+    "gold_evidence_text": [
+      "2. On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.",
+      "3. Her body temperature is normal and her blood pressure is 80/60."
+    ],
+    "predicted_evidence_text": [
+      "0. A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission."
+    ],
+    "classification_error": true,
+    "evidence_error": true,
+    "error_type": "Both",
+    "raw_model_output": " {\"label\": \"not enough information\", \"evidence_ids\": [0]}",
+    "grounded_error_explanation": "The expert annotation identifies shock-related evidence: tachypnea, tachycardia, and hypotension (80/60). The model predicts insufficient information and cites the presenting arm pain instead. This indicates failure to connect the clinical signs with the shock criterion."
+  },
+  {
+    "case_number": 2,
+    "annotation_id": 422,
+    "patient_id": "sigir-201422",
+    "criterion_type": "inclusion",
+    "criterion": "If female, using birth control",
+    "gold_label": "not applicable",
+    "predicted_label": "included",
+    "gold_evidence_ids": [
+      3
+    ],
+    "predicted_evidence_ids": [
+      0
+    ],
+    "gold_evidence_text": [
+      "3. She has had no sexual partners and her menses are regular."
+    ],
+    "predicted_evidence_text": [
+      "0. A 15-year-old girl presents to the ER with abdominal pain."
+    ],
+    "classification_error": true,
+    "evidence_error": true,
+    "error_type": "Both",
+    "raw_model_output": " {\"label\": \"included\", \"evidence_ids\": [0]}",
+    "grounded_error_explanation": "The expert labels this birth-control criterion as 'not applicable'. The model instead predicts 'included' and cites the patient's age rather than the expert's sentence about sexual history and menstruation. The model fails to reproduce the expert's applicability judgment and selects irrelevant evidence."
+  },
+  {
+    "case_number": 3,
+    "annotation_id": 745,
+    "patient_id": "sigir-201513",
+    "criterion_type": "inclusion",
+    "criterion": "female patients have adequate birth-control method",
+    "gold_label": "not applicable",
+    "predicted_label": "not enough information",
+    "gold_evidence_ids": [],
+    "predicted_evidence_ids": [],
+    "gold_evidence_text": [],
+    "predicted_evidence_text": [],
+    "classification_error": true,
+    "evidence_error": false,
+    "error_type": "Classification",
+    "raw_model_output": " {\"label\": \"not enough information\", \"evidence_ids\": []}",
+    "grounded_error_explanation": "The expert assigns 'not applicable', whereas the model predicts 'not enough information'. Neither identifies an evidence sentence. This is an applicability-versus-insufficient-information classification error. The available evidence does not establish why the expert considered the criterion inapplicable."
+  },
+  {
+    "case_number": 4,
+    "annotation_id": 165,
+    "patient_id": "sigir-201410",
+    "criterion_type": "exclusion",
+    "criterion": "Pregnancy",
+    "gold_label": "not applicable",
+    "predicted_label": "not excluded",
+    "gold_evidence_ids": [],
+    "predicted_evidence_ids": [],
+    "gold_evidence_text": [],
+    "predicted_evidence_text": [],
+    "classification_error": true,
+    "evidence_error": false,
+    "error_type": "Classification",
+    "raw_model_output": " {\"label\": \"not excluded\", \"evidence_ids\": []}",
+    "grounded_error_explanation": "For the pregnancy exclusion criterion, the expert assigns 'not applicable', but the model predicts 'not excluded'. Both evidence sets are empty. The model confuses an inapplicable criterion with an exclusion condition that is not met. The displayed evidence does not establish the expert's rationale."
+  },
+  {
+    "case_number": 5,
+    "annotation_id": 306,
+    "patient_id": "sigir-201417",
+    "criterion_type": "inclusion",
+    "criterion": "Patients with liver space occupying lesion (LOE) that require extended hepatic resection.",
+    "gold_label": "not enough information",
+    "predicted_label": "included",
+    "gold_evidence_ids": [
+      3
+    ],
+    "predicted_evidence_ids": [
+      5
+    ],
+    "gold_evidence_text": [
+      "3. Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained."
+    ],
+    "predicted_evidence_text": [
+      "5. The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    ],
+    "classification_error": true,
+    "evidence_error": true,
+    "error_type": "Both",
+    "raw_model_output": " {\"label\": \"included\", \"evidence_ids\": [5]}",
+    "grounded_error_explanation": "The expert identifies a ruptured liver abscess treated with surgical drainage. This does not establish that the patient requires extended hepatic resection. The model predicts 'included' and cites an unrelated informed-consent sentence, suggesting both criterion misinterpretation and irrelevant evidence selection."
+  },
+  {
+    "case_number": 6,
+    "annotation_id": 169,
+    "patient_id": "sigir-201410",
+    "criterion_type": "exclusion",
+    "criterion": "Patients with an estimated pre-operative glomerular filtration rate < 30mls/min/1.73m2",
+    "gold_label": "not enough information",
+    "predicted_label": "not excluded",
+    "gold_evidence_ids": [],
+    "predicted_evidence_ids": [],
+    "gold_evidence_text": [],
+    "predicted_evidence_text": [],
+    "classification_error": true,
+    "evidence_error": false,
+    "error_type": "Classification",
+    "raw_model_output": " {\"label\": \"not excluded\", \"evidence_ids\": []}",
+    "grounded_error_explanation": "The exclusion criterion requires a pre-operative glomerular filtration rate below 30. The expert assigns 'not enough information', but the model predicts 'not excluded'. Neither provides evidence. The model treats the absence of a documented low filtration rate as evidence that the exclusion condition is not met."
+  },
+  {
+    "case_number": 7,
+    "annotation_id": 836,
+    "patient_id": "sigir-201516",
+    "criterion_type": "inclusion",
+    "criterion": "History of episodic wheezing, chest tightness, or shortness of breath after age of 6 years consistent with asthma, or physician diagnosed asthma after age of 6 years.",
+    "gold_label": "not included",
+    "predicted_label": "included",
+    "gold_evidence_ids": [
+      0,
+      1
+    ],
+    "predicted_evidence_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "gold_evidence_text": [
+      "0. A 4 year old boy presents to the emergency room with wheezing.",
+      "1. He has had a history of allergic rhinitis, but no history of wheezing."
+    ],
+    "predicted_evidence_text": [
+      "0. A 4 year old boy presents to the emergency room with wheezing.",
+      "1. He has had a history of allergic rhinitis, but no history of wheezing.",
+      "2. His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing.",
+      "3. The coughing lasted only moments, but he has been audibly wheezing since."
+    ],
+    "classification_error": true,
+    "evidence_error": true,
+    "error_type": "Both",
+    "raw_model_output": " {\"label\": \"included\", \"evidence_ids\": [0, 1, 2, 3]}",
+    "grounded_error_explanation": "The criterion requires asthma-consistent symptoms or a diagnosis after age six. The patient is four years old and has no previous wheezing history. The model predicts 'included', apparently focusing on the current wheezing episode while overlooking the age restriction. It also cites additional sentences beyond the expert evidence."
+  },
+  {
+    "case_number": 8,
+    "annotation_id": 161,
+    "patient_id": "sigir-201410",
+    "criterion_type": "inclusion",
+    "criterion": "Patients undergoing elective carotid endarterectomy",
+    "gold_label": "not included",
+    "predicted_label": "not enough information",
+    "gold_evidence_ids": [],
+    "predicted_evidence_ids": [],
+    "gold_evidence_text": [],
+    "predicted_evidence_text": [],
+    "classification_error": true,
+    "evidence_error": false,
+    "error_type": "Classification",
+    "raw_model_output": " {\"label\": \"not enough information\", \"evidence_ids\": []}",
+    "grounded_error_explanation": "The expert labels the elective carotid endarterectomy criterion 'not included', while the model predicts 'not enough information'. Both evidence sets are empty. This reflects a disagreement between a negative eligibility judgment and an uncertainty judgment. The displayed evidence is insufficient to determine the precise reason for the disagreement."
+  },
+  {
+    "case_number": 9,
+    "annotation_id": 179,
+    "patient_id": "sigir-201410",
+    "criterion_type": "exclusion",
+    "criterion": "Had been performed central venous puncture or catheterization before.",
+    "gold_label": "not excluded",
+    "predicted_label": "not excluded",
+    "gold_evidence_ids": [
+      0
+    ],
+    "predicted_evidence_ids": [],
+    "gold_evidence_text": [
+      "0. A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning."
+    ],
+    "predicted_evidence_text": [],
+    "classification_error": false,
+    "evidence_error": true,
+    "error_type": "Evidence",
+    "raw_model_output": " {\"label\": \"not excluded\", \"evidence_ids\": []}",
+    "grounded_error_explanation": "The model correctly predicts 'not excluded' but omits the expert's evidence sentence. The patient underwent cardiac catheterization through the femoral artery, while the exclusion criterion concerns prior central venous puncture or catheterization. This is an evidence retrieval failure rather than a classification error."
+  }
+]

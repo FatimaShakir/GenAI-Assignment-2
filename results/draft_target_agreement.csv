@@ -1,0 +1,4 @@
+prompt_length,target_token_id,draft_token_id,agreement
+64,36592,80169,False
+128,80266,8951,False
+256,54565,38619,False

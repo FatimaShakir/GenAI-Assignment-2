@@ -1,0 +1,71 @@
+annotation_id,patient_id,criterion_type,gold_label,gold_evidence_ids,raw_response,predicted_label,predicted_evidence_ids,parse_success,evaluated_prediction,f1,exact_match,classification_correct,classification_error,evidence_error,criterion_text,patient_text
+8,sigir-20141,exclusion,not enough information,"[0, 1, 2]","{""label"": ""not excluded"", ""evidence_ids"": []}",not excluded,[],True,not excluded,0.0,False,False,True,True,Unstable angina,"0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.
+1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.
+2. The latest episode of pain ended half an hour prior to her arrival.
+3. She is known to have hypertension and obesity.
+4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.
+5. She currently takes no medications.
+6. Physical examination is normal.
+7. The EKG shows nonspecific changes.
+8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+15,sigir-20141,exclusion,not enough information,[],"{""label"": ""not excluded"", ""evidence_ids"": []}",not excluded,[],True,not excluded,0.0,True,False,True,False,Pregnant and nursing women,"0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.
+1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.
+2. The latest episode of pain ended half an hour prior to her arrival.
+3. She is known to have hypertension and obesity.
+4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.
+5. She currently takes no medications.
+6. Physical examination is normal.
+7. The EKG shows nonspecific changes.
+8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+18,sigir-20141,exclusion,not enough information,[],"{""label"": ""not excluded"", ""evidence_ids"": [8]}",not excluded,[8],True,not excluded,0.0,False,False,True,True,Patients not eligible for Tc 99m SPECT,"0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.
+1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.
+2. The latest episode of pain ended half an hour prior to her arrival.
+3. She is known to have hypertension and obesity.
+4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.
+5. She currently takes no medications.
+6. Physical examination is normal.
+7. The EKG shows nonspecific changes.
+8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+19,sigir-20141,exclusion,not enough information,[],"{""label"": ""not excluded"", ""evidence_ids"": []}",not excluded,[],True,not excluded,0.0,True,False,True,False,Patients in whom beta blockers are contraindicated,"0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.
+1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.
+2. The latest episode of pain ended half an hour prior to her arrival.
+3. She is known to have hypertension and obesity.
+4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.
+5. She currently takes no medications.
+6. Physical examination is normal.
+7. The EKG shows nonspecific changes.
+8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+22,sigir-20141,inclusion,included,"[3, 4]","{""label"": ""not enough information"", ""evidence_ids"": [0]}",not enough information,[0],True,not enough information,0.0,False,False,True,True,"Clinical diagnosis of one or more risk factors, such as diabetes, smoking habit, lipid metabolism abnormality, history of ischemic heart disease (IHD) or cerebrovascular disease, obesity (BMI>25), chronic heart failure (NYHA II-III), and electrocardiogram (ECG) abnormality (LVH)","0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.
+1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.
+2. The latest episode of pain ended half an hour prior to her arrival.
+3. She is known to have hypertension and obesity.
+4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.
+5. She currently takes no medications.
+6. Physical examination is normal.
+7. The EKG shows nonspecific changes.
+8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+24,sigir-20141,exclusion,not applicable,[],"{""label"": ""not excluded"", ""evidence_ids"": []}",not excluded,[],True,not excluded,0.0,True,False,True,False,"Patients with IHD within 6 months after percutaneous coronary intervention(PCI), and who are stable but are going to implement PCI or coronary artery bypass grafting(CABG)","0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.
+1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.
+2. The latest episode of pain ended half an hour prior to her arrival.
+3. She is known to have hypertension and obesity.
+4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.
+5. She currently takes no medications.
+6. Physical examination is normal.
+7. The EKG shows nonspecific changes.
+8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+26,sigir-20141,exclusion,not enough information,[0],"{""label"": ""not excluded"", ""evidence_ids"": []}",not excluded,[],True,not excluded,0.0,False,False,True,True,Pregnant women and women of childbearing potential,"0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.
+1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.
+2. The latest episode of pain ended half an hour prior to her arrival.
+3. She is known to have hypertension and obesity.
+4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.
+5. She currently takes no medications.
+6. Physical examination is normal.
+7. The EKG shows nonspecific changes.
+8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+31,sigir-20142,inclusion,not included,[0],"{""label"": ""included"", ""evidence_ids"": [0]}",included,[0],True,included,1.0,True,False,True,False,patients have fever more than one week,"0. An 8-year-old male presents in March to the ER with fever up to 39 C, dyspnea and cough for 2 days.
+1. He has just returned from a 5 day vacation in Colorado.
+2. Parents report that prior to the onset of fever and cough, he had loose stools.
+3. He denies upper respiratory tract symptoms.
+4. On examination he is in respiratory distress and has bronchial respiratory sounds on the left.
+5. A chest x-ray shows bilateral lung infiltrates.
+6. The patient will provide informed consent, and will comply with the trial protocol without any practical issues."

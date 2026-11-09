@@ -1,0 +1,10 @@
+{
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "evaluation_split": "validation",
+    "fine_tuned": false,
+    "decoding": "greedy",
+    "max_new_tokens": 64,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "invalid_predictions": 206
+}

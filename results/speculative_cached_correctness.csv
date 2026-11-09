@@ -1,0 +1,7 @@
+prompt_length,output_length,draft_k,identical,proposed_tokens,accepted_draft_tokens,acceptance_rate,target_forward_calls,draft_forward_calls,rejections
+64,8,2,True,15,0,0.0,9,16,8
+64,16,4,True,58,0,0.0,17,59,16
+128,16,2,True,31,0,0.0,17,32,16
+128,24,4,True,90,0,0.0,25,91,24
+256,32,4,True,97,8,0.08247422680412371,26,98,23
+256,32,6,True,144,9,0.0625,25,145,23

@@ -1,0 +1,45 @@
+{
+    "task": "Speculative Decoding",
+    "target_model": "Fine-tuned Qwen2.5-0.5B-Instruct",
+    "draft_model": "12-layer distilled Qwen2.5",
+    "target_parameters": 494032768,
+    "draft_parameters": 315084160,
+    "draft_to_target_parameter_ratio": 0.6377798810300778,
+    "draft_training": {
+        "method": "Sequence-level knowledge distillation with LoRA",
+        "teacher_generated_examples": 100,
+        "epochs": 3,
+        "training_steps": 75,
+        "training_time_seconds": 61.22,
+        "validation_first_token_agreement_before": 0.0,
+        "validation_first_token_agreement_after": 1.0,
+        "validation_prompts_checked": 20
+    },
+    "correctness": {
+        "initial_speculative_tests_passed": 9,
+        "distilled_speculative_tests_passed": 9,
+        "real_validation_tests_passed": 5,
+        "persistent_cache_tests_passed": 6,
+        "benchmark_token_identity": true
+    },
+    "benchmark": {
+        "repetitions": 3,
+        "draft_k": 4,
+        "mean_speedup": 0.23231283691065463,
+        "median_speedup": 0.23894970958423117,
+        "mean_acceptance_rate": 0.05277777777777778,
+        "mean_target_latency_s": 1.0872723509998348,
+        "mean_speculative_latency_s": 4.68509526133342,
+        "mean_target_peak_gpu_gib": 1.6310998598734539,
+        "mean_speculative_peak_gpu_gib": 1.7150731086730957
+    },
+    "interpretation": "The speculative decoder reproduced the target model's greedy output exactly in all tested configurations. However, it was slower than target-only decoding because draft acceptance was low and the draft model remained relatively expensive. No inference acceleration was observed in these benchmark configurations.",
+    "limitations": [
+        "Draft model retains approximately 63.78% of target parameters.",
+        "Distillation used only 100 teacher-generated examples.",
+        "First-token agreement on 20 validation prompts does not imply high sequence-level acceptance.",
+        "Benchmark covers three prompt/output configurations.",
+        "Python-level speculative decoding incurs additional overhead.",
+        "Performance conclusions apply to the tested T4 setup and configurations."
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "target_model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "draft_layers": 12,
+    "target_layers": 24,
+    "selected_target_layer_indices": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22
+    ],
+    "target_parameters": 494032768,
+    "draft_parameters": 315084160,
+    "initialization": "Evenly spaced transformer layers copied from fine-tuned target model"
+}

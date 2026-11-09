@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "gpu": "Tesla T4",
+    "repeats_per_configuration": 3,
+    "configurations": 3,
+    "token_identity_passed": true,
+    "mean_speedup": 1.1299385616499482,
+    "maximum_speedup": 1.293614163960955,
+    "minimum_speedup": 1.003270662600338,
+    "mean_memory_reduction_percent": 10.506920747080253
+}
