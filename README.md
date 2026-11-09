@@ -33,3 +33,40 @@ Educational, CPU-compatible Gradio application built with **Qwen/Qwen2.5-0.5B-In
 ## Reproducibility
 
 Training, patient-grouped splitting, explicit KV-cache implementation, tiled attention, speculative decoding, plots, and complete evaluations are in the Colab notebook to be copied into `notebooks/`. The fine-tuned LoRA adapter must be supplied separately. No patient-specific screening exports should be committed.
+
+
+## Submission Links
+
+**Project:** GenAI Assignment 2 — Evidence-Grounded Clinical Trial Eligibility Screening
+
+| Deliverable | Link |
+|---|---|
+| GitHub Repository | https://github.com/FatimaShakir/GenAI-Assignment-2 |
+| Trained Model Artifacts | https://drive.google.com/drive/folders/12UWSueNSTf1GRYghai724_B-3irobjgY?usp=sharing |
+| Demonstration Video | https://youtu.be/S7oah7-hhLw |
+
+### Trained Model Artifacts
+
+The shared Google Drive folder contains three downloadable ZIP files:
+
+1. `qwen_lora_final.zip` — Fine-tuned Qwen2.5-0.5B LoRA adapter.
+2. `qwen_12layer_draft.zip` — Custom 12-layer draft model for speculative decoding.
+3. `draft_distilled_lora.zip` — Distilled draft-model LoRA adapter.
+
+To run the application, download and extract the required model artifacts into the repository's `models/` directory, preserving their original folder names.
+
+The base model is `Qwen/Qwen2.5-0.5B-Instruct`, available from Hugging Face.
+
+### Application Launch
+
+On Windows, after installing the dependencies and downloading the model artifacts, double-click `start_app.bat`.
+
+The application runs locally at:
+
+`http://127.0.0.1:7860`
+
+### Demonstration and Limitations
+
+The demonstration video shows two synthetic screening examples: one with correct criterion-level predictions and evidence citations, and another illustrating an incorrect metformin exclusion prediction.
+
+This project is an educational prototype, not a clinical decision-making system. All predictions and evidence require human verification.
